@@ -40,4 +40,21 @@ public class FizzBuzzTest {
         Assert.assertEquals("Expected value is fizz", expected, actual);
 
     }
+
+    @Test
+    public void provideNumber_when_gets_dividable_by_five_answers_buzz() {
+        final int providedNumber = 5;
+
+        //expected
+        final String expected = "buzz";
+
+        //act
+        FizzBuzz SUT = new FizzBuzz();
+        final String actual = SUT.provideNumber(providedNumber);
+
+
+        //Assert
+        Assert.assertEquals("Expected value is buzz", expected, actual);
+
+    }
 }
