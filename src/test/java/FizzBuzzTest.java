@@ -57,4 +57,21 @@ public class FizzBuzzTest {
         Assert.assertEquals("Expected value is buzz", expected, actual);
 
     }
+
+    @Test
+    public void provideNumber_when_gets_dividable_by_both_answers_fizzbuzz() {
+        final int providedNumber = 15;
+
+        //expected
+        final String expected = "fizzbuzz";
+
+        //act
+        FizzBuzz SUT = new FizzBuzz();
+        final String actual = SUT.provideNumber(providedNumber);
+
+
+        //Assert
+        Assert.assertEquals("Expected value is fizzbuzz", expected, actual);
+
+    }
 }
