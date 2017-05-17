@@ -1,4 +1,3 @@
-import com.fizzbuzz.constants.FizzBuzzConstants;
 import com.fizzbuzz.printers.FizzBuzzPrinter;
 
 /**

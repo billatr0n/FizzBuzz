@@ -5,10 +5,10 @@ package com.fizzbuzz.constants;
  */
 public final class FizzBuzzConstants {
     public static String FIZZ = "fizz";
-    public static int FIZZ_DIVIDER = 3;
+    public static int FIZZ_DIVISOR = 3;
 
     public static String BUZZ = "buzz";
-    public static int BUZZ_DIVIDER = 5;
+    public static int BUZZ_DIVISOR = 5;
 
-    public static int FIZZBUZZ_DIVIDER = 15;
+    public static int FIZZBUZZ_DIVISOR = 15;
 }

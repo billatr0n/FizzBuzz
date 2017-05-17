@@ -13,11 +13,11 @@ public class FizzBuzzStrategy {
 
     private String getResponse(Integer number) {
         String result = number.toString();
-        if (isDividable(number, FizzBuzzConstants.FIZZBUZZ_DIVIDER))
+        if (isDividable(number, FizzBuzzConstants.FIZZBUZZ_DIVISOR))
             result = FizzBuzzConstants.FIZZ + FizzBuzzConstants.BUZZ;
-        else if (isDividable(number, FizzBuzzConstants.BUZZ_DIVIDER))
+        else if (isDividable(number, FizzBuzzConstants.BUZZ_DIVISOR))
             result = FizzBuzzConstants.BUZZ;
-        else if (isDividable(number, FizzBuzzConstants.FIZZ_DIVIDER))
+        else if (isDividable(number, FizzBuzzConstants.FIZZ_DIVISOR))
             result = FizzBuzzConstants.FIZZ;
         return result;
     }
