@@ -9,4 +9,6 @@ public final class FizzBuzzConstants {
 
     public static String BUZZ = "buzz";
     public static int BUZZ_DIVIDER = 5;
+
+    public static int FIZZBUZZ_DIVIDER = 15;
 }
