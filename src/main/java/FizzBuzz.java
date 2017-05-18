@@ -8,10 +8,14 @@ public class FizzBuzz {
 
     public static String BUZZ = "buzz";
     public static int BUZZ_DIVISOR = 5;
+    public static int FIZZBUZZ_DIVISOR = 15;
+
 
     public String provideNumber(Integer value) {
         String returnedString = "";
-        if (Math.floorMod(value, FIZZ_DIVISOR) == 0) {
+        if (Math.floorMod(value, FIZZBUZZ_DIVISOR) == 0) {
+            returnedString = FIZZ + BUZZ;
+        } else if (Math.floorMod(value, FIZZ_DIVISOR) == 0) {
             returnedString = FIZZ;
         } else if (Math.floorMod(value, BUZZ_DIVISOR) == 0) {
             returnedString = BUZZ;
