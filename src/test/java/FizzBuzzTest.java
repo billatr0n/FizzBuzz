@@ -16,10 +16,12 @@ public class FizzBuzzTest {
     private static final String EXPECTED_ONE = "1";
     private static final String EXPECTED_TWO = "2";
     private static final String EXPECTED_THREE = "fizz";
+    private static final String EXPECTED_FIVE = "buzz";
 
     private static final int POINTED_WITH_ONE = 1;
     private static final int POINTED_WITH_TWO = 2;
     private static final int POINTED_WITH_THREE = 3;
+    private static final int POINTED_WITH_FIVE = 5;
 
     @Before
     public void setup() {
@@ -35,6 +37,7 @@ public class FizzBuzzTest {
                 new Object[]{POINTED_WITH_ONE, EXPECTED_ONE},
                 new Object[]{POINTED_WITH_TWO, EXPECTED_TWO},
                 new Object[]{POINTED_WITH_THREE, EXPECTED_THREE},
+                new Object[]{POINTED_WITH_FIVE, EXPECTED_FIVE},
         };
     }
 
