@@ -10,18 +10,26 @@ public class FizzBuzz {
     public static int BUZZ_DIVISOR = 5;
     public static int FIZZBUZZ_DIVISOR = 15;
 
+    private static final String NOT_A_NUMBER = "This is not a number";
 
-    public String provideNumber(Integer value) {
+
+    public String provideNumber(Object value) {
         String returnedString = "";
-        if (Math.floorMod(value, FIZZBUZZ_DIVISOR) == 0) {
-            returnedString = FIZZ + BUZZ;
-        } else if (Math.floorMod(value, FIZZ_DIVISOR) == 0) {
-            returnedString = FIZZ;
-        } else if (Math.floorMod(value, BUZZ_DIVISOR) == 0) {
-            returnedString = BUZZ;
-        } else
-            returnedString = String.valueOf(value);
+        if (Integer.class != value.getClass()) {
+            returnedString = NOT_A_NUMBER;
+        } else {
+            Integer intValue = (Integer) value;
 
-        return returnedString;
+            if (Math.floorMod(intValue, FIZZBUZZ_DIVISOR) == 0) {
+                returnedString = FIZZ + BUZZ;
+            } else if (Math.floorMod(intValue, FIZZ_DIVISOR) == 0) {
+                returnedString = FIZZ;
+            } else if (Math.floorMod(intValue, BUZZ_DIVISOR) == 0) {
+                returnedString = BUZZ;
+            } else
+                returnedString = String.valueOf(value);
+        }
+            return returnedString;
+
     }
 }
