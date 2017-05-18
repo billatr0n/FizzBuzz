@@ -15,13 +15,16 @@ public class FizzBuzzTest {
 
     private static final String EXPECTED_ONE = "1";
     private static final String EXPECTED_TWO = "2";
-    private static final String EXPECTED_THREE = "fizz";
-    private static final String EXPECTED_FIVE = "buzz";
+    private static final String EXPECTED_FIZZ = "fizz";
+    private static final String EXPECTED_BUZZ = "buzz";
+    private static final String EXPECTED_FIZZBUZZ = "fizzbuzz";
 
     private static final int POINTED_WITH_ONE = 1;
     private static final int POINTED_WITH_TWO = 2;
     private static final int POINTED_WITH_THREE = 3;
     private static final int POINTED_WITH_FIVE = 5;
+    private static final int POINTED_WITH_FIFTEEN = 15;
+    private static final int POINTED_WITH_SIXTY = 60;
 
     @Before
     public void setup() {
@@ -36,15 +39,17 @@ public class FizzBuzzTest {
 
                 new Object[]{POINTED_WITH_ONE, EXPECTED_ONE},
                 new Object[]{POINTED_WITH_TWO, EXPECTED_TWO},
-                new Object[]{POINTED_WITH_THREE, EXPECTED_THREE},
-                new Object[]{POINTED_WITH_FIVE, EXPECTED_FIVE},
+                new Object[]{POINTED_WITH_THREE, EXPECTED_FIZZ},
+                new Object[]{POINTED_WITH_FIVE, EXPECTED_BUZZ},
+                new Object[]{POINTED_WITH_FIFTEEN, EXPECTED_FIZZBUZZ},
+                new Object[]{POINTED_WITH_SIXTY, EXPECTED_FIZZBUZZ},
         };
     }
 
 
     @Test
     @Parameters(method = "getPointedNumbersAndSayNumbers")
-    public void provideNumber_when_gets_one_answers_one(int givenNumber, String expectedString) {
+    public void provideNumber_When_Gets_Number_Answers_ExpectedValue(int givenNumber, String expectedString) {
 
         //act
         final String actual = SUT.provideNumber(givenNumber);
