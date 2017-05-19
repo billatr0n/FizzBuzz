@@ -1,4 +1,4 @@
-# FizzBuzz Daily Katas --18/05/2017--
+# FizzBuzz Daily Katas --18-19/05/2017--
 
 **_Kata_** (型 or 形 literally: "form"?), a Japanese word, are detailed choreographed patterns of movements practised either solo or in pairs. The term form is used for the corresponding concept in non-Japanese martial arts in general.
 
@@ -6,7 +6,7 @@
 
 
 
-**FizzBuzz** is a game that has gained in popularity as a programming assignment to weed out non-programmers during job interviews. The object of the assignment is less about solving it correctly according to the below rules and more about showing the programmer understands basic, necessary tools such as if-/else-statements and loops. The rules of FizzBuzz are as follows:
+**FizzBuzz** is a game that has gained in popularity as a programming assignment to weed out non-programmers during job interviews. The object of the assignment is less about solving it correctly according to the below Utils.rules and more about showing the programmer understands basic, necessary tools such as if-/else-statements and loops. The Utils.rules of FizzBuzz are as follows:
 
 For numbers 1 through 100,
 

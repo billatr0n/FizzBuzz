@@ -1,3 +1,5 @@
+import Utils.ReplyStrategy;
+
 /**
  * Created by Bill on 17/5/2017.
  */
@@ -19,17 +21,10 @@ public class FizzBuzz {
             returnedString = NOT_A_NUMBER;
         } else {
             Integer intValue = (Integer) value;
-
-            if (Math.floorMod(intValue, FIZZBUZZ_DIVISOR) == 0) {
-                returnedString = FIZZ + BUZZ;
-            } else if (Math.floorMod(intValue, FIZZ_DIVISOR) == 0) {
-                returnedString = FIZZ;
-            } else if (Math.floorMod(intValue, BUZZ_DIVISOR) == 0) {
-                returnedString = BUZZ;
-            } else
-                returnedString = String.valueOf(value);
+            ReplyStrategy replyStrategy = ReplyStrategy.getInstance();
+            returnedString = replyStrategy.print(intValue);
         }
-            return returnedString;
+        return returnedString;
 
     }
 }
