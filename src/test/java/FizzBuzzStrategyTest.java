@@ -41,7 +41,7 @@ public class FizzBuzzStrategyTest {
     public void provideNumber_When_Gets_Number_Answers_ExpectedValue(int givenNumber, String expectedString) {
 
         //act
-        final String actual = SUT.printResponse();
+        final String actual = SUT.printResponse(givenNumber);
 
         //Assert
         Assert.assertEquals("Expected value is " + expectedString, expectedString, actual);

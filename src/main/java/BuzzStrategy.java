@@ -14,7 +14,7 @@ public class BuzzStrategy implements PrintStrategy{
         return result;
     }
 
-    public String printResponse() {
+    public String printResponse(Integer value) {
         return BUZZ_STR;
     }
 }

@@ -10,29 +10,27 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(JUnitParamsRunner.class)
-public class FizzStrategyTest {
+public class DefaultPrintStrategyTest {
 
-    FizzStrategy SUT;
+    DefaultPrintStrategy SUT;
 
-    private static final String EXPECTED_FIZZ = "fizz";
-
-    private static final int POINTED_WITH_THREE = 3;
-
-    private static final int POINTED_WITH_SIX = 6;
-
+    private static final String EXPECTED_ONE = "1";
+    private static final String EXPECTED_TWO = "2";
+    private static final int POINTED_WITH_ONE = 1;
+    private static final int POINTED_WITH_TWO = 2;
 
     private static final Object[] getPointedNumbersAndSayNumbers() {
 
         return new Object[]{
-                new Object[]{POINTED_WITH_THREE, EXPECTED_FIZZ},
-                new Object[]{POINTED_WITH_SIX, EXPECTED_FIZZ},
+                new Object[]{POINTED_WITH_ONE, EXPECTED_ONE},
+                new Object[]{POINTED_WITH_TWO, EXPECTED_TWO},
         };
     }
 
     @Before
     public void setup() {
 
-        SUT = new FizzStrategy();
+        SUT = new DefaultPrintStrategy();
     }
 
 

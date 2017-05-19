@@ -4,5 +4,5 @@
 public interface PrintStrategy {
     boolean strategyApplies(Integer value);
 
-    String printResponse();
+    String printResponse(Integer value);
 }
