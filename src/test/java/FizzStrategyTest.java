@@ -1,6 +1,7 @@
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -28,13 +29,19 @@ public class FizzStrategyTest {
         };
     }
 
+    @Before
+    public void setup() {
+
+        SUT = new FizzStrategy();
+    }
+
 
     @Test
     @Parameters(method = "getPointedNumbersAndSayNumbers")
     public void provideNumber_When_Gets_Number_Answers_ExpectedValue(int givenNumber, String expectedString) {
 
         //act
-        final String actual = SUT.provideNumber(givenNumber);
+        final String actual = SUT.printResponse();
 
         //Assert
         Assert.assertEquals("Expected value is " + expectedString, expectedString, actual);
