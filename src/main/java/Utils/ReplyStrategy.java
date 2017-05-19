@@ -24,6 +24,7 @@ public class ReplyStrategy {
         for(RuleReplyStrategy rule : rules){
             if(rule.isApplicable(number)){
                 reply =  rule.printReply(number);
+                break;
             }
         }
         return reply;

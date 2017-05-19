@@ -34,17 +34,11 @@ public class FizzBuzzTest {
         SUT = new FizzBuzz();
     }
 
-    //In gogle drive there is a good book that explain this practical unit testing with junit and mockito
     private static final Object[] getPointedNumbersAndSayNumbers() {
 
         return new Object[]{
 
-                new Object[]{POINTED_WITH_ONE, EXPECTED_ONE},
-                new Object[]{POINTED_WITH_TWO, EXPECTED_TWO},
-                new Object[]{POINTED_WITH_THREE, EXPECTED_FIZZ},
-                new Object[]{POINTED_WITH_FIVE, EXPECTED_BUZZ},
                 new Object[]{POINTED_WITH_FIFTEEN, EXPECTED_FIZZBUZZ},
-                new Object[]{POINTED_WITH_SIXTY, EXPECTED_FIZZBUZZ},
         };
     }
 
