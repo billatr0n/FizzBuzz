@@ -1,7 +1,7 @@
 /**
  * Created by vasilis on 19-5-17.
  */
-public class BuzzStrategy implements PrintStrategy{
+public class BuzzStrategy implements RulePrintStrategy {
 
     public static final Integer BUZZ_VALUE = 5;
     public static final String BUZZ_STR = "buzz";

@@ -1,7 +1,7 @@
 /**
  * Created by vasilis on 19-5-17.
  */
-public class FizzStrategy implements PrintStrategy{
+public class FizzStrategy implements RulePrintStrategy {
 
     public static final Integer FIZZ_VALUE = 3;
     public static final String FIZZ_STR = "fizz";

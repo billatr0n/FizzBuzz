@@ -1,7 +1,7 @@
 /**
  * Created by vasilis on 19-5-17.
  */
-public class DefaultPrintStrategy implements PrintStrategy {
+public class DefaultPrintStrategy implements RulePrintStrategy {
 
     String response ="";
 
