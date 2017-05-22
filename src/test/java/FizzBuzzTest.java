@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Bill on 17/5/2017.
  */
@@ -26,7 +29,12 @@ public class FizzBuzzTest {
     @Before
     public void setup() {
 
-        SUT = new FizzBuzz();
+        List<RulePrintStrategy> rules1 = new ArrayList<RulePrintStrategy>();
+        rules1.add(new FizzBuzzStrategy());
+        rules1.add(new FizzStrategy());
+        rules1.add(new BuzzStrategy());
+        SUT = new FizzBuzz(rules1, new DefaultPrintStrategy());
+
     }
 
     @Test
@@ -37,7 +45,6 @@ public class FizzBuzzTest {
         final String expected = "1";
 
         //act
-        SUT = new FizzBuzz();
         final String actual = SUT.provideNumber(providedNumber);
 
 

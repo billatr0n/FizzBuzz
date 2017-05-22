@@ -15,16 +15,17 @@ public class ReplyStrategy {
     private RulePrintStrategy defaultRule;
 
     public String print(Integer number) {
-        String reply = INVALID_NUMBER;
-        if (rules.isEmpty()) {
-            reply = defaultRule.printResponse(number);
-        }
+        String reply = "";
+        boolean appliedAStrategy = false;
         for (RulePrintStrategy rule : rules) {
             if (rule.strategyApplies(number)) {
                 reply = rule.printResponse(number);
+                appliedAStrategy = true;
                 break;
             }
         }
+        if(!appliedAStrategy)
+            reply = defaultRule.printResponse(number);
         return reply;
     }
 
