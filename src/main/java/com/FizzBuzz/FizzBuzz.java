@@ -1,3 +1,5 @@
+package com.FizzBuzz;
+
 import java.util.List;
 
 /**

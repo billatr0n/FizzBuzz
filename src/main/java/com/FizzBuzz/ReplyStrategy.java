@@ -1,4 +1,4 @@
-/**
+package com.FizzBuzz; /**
  * Created by vasilis on 19-5-17.
  */
 

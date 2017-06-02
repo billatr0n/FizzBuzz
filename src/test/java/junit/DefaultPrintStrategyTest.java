@@ -1,3 +1,6 @@
+package junit;
+
+import com.FizzBuzz.DefaultPrintStrategy;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;

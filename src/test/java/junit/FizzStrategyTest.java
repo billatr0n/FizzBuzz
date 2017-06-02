@@ -1,3 +1,6 @@
+package junit;
+
+import com.FizzBuzz.FizzStrategy;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Assert;
@@ -10,29 +13,29 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(JUnitParamsRunner.class)
-public class FizzBuzzStrategyTest {
+public class FizzStrategyTest {
 
-    FizzBuzzStrategy SUT;
+    FizzStrategy SUT;
 
-    private static final String EXPECTED_FIZZBUZZ = "fizzbuzz";
+    private static final String EXPECTED_FIZZ = "fizz";
 
-    private static final int POINTED_WITH_FIFTEEN = 15;
+    private static final int POINTED_WITH_THREE = 3;
 
-    private static final int POINTED_WITH_THIRTY = 30;
+    private static final int POINTED_WITH_SIX = 6;
 
 
     private static final Object[] getPointedNumbersAndSayNumbers() {
 
         return new Object[]{
-                new Object[]{POINTED_WITH_FIFTEEN, EXPECTED_FIZZBUZZ},
-                new Object[]{POINTED_WITH_THIRTY, EXPECTED_FIZZBUZZ},
+                new Object[]{POINTED_WITH_THREE, EXPECTED_FIZZ},
+                new Object[]{POINTED_WITH_SIX, EXPECTED_FIZZ},
         };
     }
 
     @Before
     public void setup() {
 
-        SUT = new FizzBuzzStrategy();
+        SUT = new FizzStrategy();
     }
 
 
